@@ -14,7 +14,6 @@ setup(
     long_description_content_type='text/markdown',
     keywords='qurator ocr postcorrection',
     license='Apache',
-    namespace_packages=['qurator'],
     packages=find_packages(),
     install_requires=install_requires,
     entry_points={
