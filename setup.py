@@ -1,5 +1,5 @@
 from io import open
-from setuptools import find_packages, setup
+from setuptools import find_namespace_packages, setup
 
 with open('requirements.txt') as f_in:
     install_requires = f_in.read()
@@ -14,7 +14,7 @@ setup(
     long_description_content_type='text/markdown',
     keywords='qurator ocr postcorrection',
     license='Apache',
-    packages=find_packages(),
+    packages=find_namespace_packages(include=['qurator']),
     install_requires=install_requires,
     entry_points={
         'console_scripts': [
